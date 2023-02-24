@@ -1,9 +1,27 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+  --text-highlight: #fff2ca;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
 }
 
 a {
@@ -13,6 +31,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.secondary-text {
+  font-family: 'Lora', serif;
 }
 
 @media (prefers-color-scheme: dark) {
