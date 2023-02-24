@@ -1,11 +1,18 @@
+import dynamic from "next/dynamic";
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 
+const ThemeContextProvider = dynamic(() => import("../context/ThemeContext").then((tc) => tc.ThemeContextProvider), {
+  ssr: false,
+});
+
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout >
+    <ThemeContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout >
+    </ThemeContextProvider>
   )
 }
 
