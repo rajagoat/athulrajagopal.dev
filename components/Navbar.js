@@ -10,6 +10,10 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
     const [activeTheme, setActiveTheme] = useState(document.body.dataset.theme);
 
+    /* 
+        credits for dark mode implementation goes to Rob Morieson, the referenced
+        tutorial can be found here: https://electricanimals.com/articles/next-js-dark-mode-toggle
+    */
     const toggleTheme = () => {
         const newTheme = activeTheme === 'light' ? 'dark' : 'light';
         setActiveTheme(newTheme);
