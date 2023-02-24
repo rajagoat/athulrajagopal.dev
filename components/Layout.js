@@ -1,10 +1,14 @@
+import dynamic from "next/dynamic";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700']
+});
+
+const Navbar = dynamic(() => import("../components/Navbar"), {
+    ssr: false,
 });
 
 const Layout = ({ children }) => {

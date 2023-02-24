@@ -1,10 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
-import lightModeIcon from "../public/icons/light-mode.svg";
-import darkModeIcon from "../public/icons/dark-mode.svg";
+import { Icon } from "@iconify/react";
+import themeIcon from '@iconify/icons-mdi/theme-light-dark';
+import menuIcon from '@iconify/icons-mdi/menu';
+import closeIcon from '@iconify/icons-mdi/close';
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [activeTheme, setActiveTheme] = useState(document.body.dataset.theme);
+
+    const toggleTheme = () => {
+        const newTheme = activeTheme === 'light' ? 'dark' : 'light';
+        setActiveTheme(newTheme);
+    };
+
+    useEffect(() => {
+        document.body.dataset.theme = activeTheme;
+        window.localStorage.setItem("theme", activeTheme);
+    }, [activeTheme]);
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -27,11 +42,12 @@ const Navbar = () => {
                 <Link href="/about">
                     About
                 </Link>
-                <Image
-                    src={lightModeIcon}
-                    width={49.5}
-                    height={49.5}
-                    alt="sun icon, click to switch to dark mode"
+                <Icon
+                    icon={themeIcon}
+                    width="49.5"
+                    height="49.5"
+                    onClick={() => toggleTheme()}
+                    style={{cursor: "pointer"}}
                 />
             </div>
         </nav>

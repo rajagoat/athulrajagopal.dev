@@ -14,6 +14,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@iconify/icons-mdi": "^1.2.41",
+    "@iconify/react": "^4.1.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.0"
   }

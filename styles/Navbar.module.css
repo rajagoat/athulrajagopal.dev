@@ -15,3 +15,7 @@
 .links > a {
     margin-right: 66px;
 }
+
+.themeIcon {
+    cursor: pointer;
+}

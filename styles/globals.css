@@ -2,10 +2,26 @@
   --text-highlight: #fff2ca;
 }
 
+body,
+body[data-theme="light"] {
+  --color-text-primary: black;
+  --color-text-secondary: white;
+  --color-bg-primary: white;
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: white;
+  --color-text-secondary: #001220;
+  --color-bg-primary: #001220;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  transition: background 0.25s ease-in-out;
 }
 
 .container {
@@ -29,14 +45,4 @@ a {
 
 .secondary-text {
   font-family: 'Lora', serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

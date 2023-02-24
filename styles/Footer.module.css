@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: center;
     font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .footer > p {
@@ -11,6 +12,8 @@
 
 .externalLink {
     background-color: var(--text-highlight);
+    color: black;
+    padding-right: 5px;
 }
 
 .social {
@@ -19,4 +22,8 @@
     display: flex;
     align-self: center;
     justify-content: space-between;
+}
+
+.social > a {
+    display: inherit;
 }
