@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
+import lightModeIcon from "../public/icons/light-mode.svg";
+import darkModeIcon from "../public/icons/dark-mode.svg";
 
 const Navbar = () => {
     return (
@@ -26,7 +28,7 @@ const Navbar = () => {
                     About
                 </Link>
                 <Image
-                    src="/icons/light-mode.svg"
+                    src={lightModeIcon}
                     width={49.5}
                     height={49.5}
                     alt="sun icon, click to switch to dark mode"

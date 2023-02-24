@@ -3,11 +3,25 @@
 /* Lora */
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+:root {
+  --text-highlight: #fff2ca;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
 }
 
 a {
