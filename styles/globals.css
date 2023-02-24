@@ -1,5 +1,9 @@
 :root {
   --text-highlight: #fff2ca;
+  --light-mode-color: black;
+  --light-mode-bg: white;
+  --dark-mode-color: white;
+  --dark-mode-bg: #001220;
 }
 
 html,
@@ -36,7 +40,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: var(--dark-mode-color);
+    background: var(--dark-mode-bg);
   }
 }

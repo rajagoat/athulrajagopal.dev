@@ -1,7 +1,7 @@
-import Image from "next/image";
 import styles from "../styles/Footer.module.css";
-import github from "../public/icons/github.svg";
-import linkedin from "../public/icons/linkedin.svg";
+import { Icon } from "@iconify/react";
+import linkedinIcon from "@iconify/icons-mdi/linkedin";
+import githubIcon from "@iconify/icons-mdi/github";
 
 const Footer = () => {
     return (
@@ -18,20 +18,10 @@ const Footer = () => {
             <p>Built with Next.js</p>
             <div className={styles.social}>
                 <a href="https://github.com/rajagoat" target="_blank">
-                    <Image
-                        src={github}
-                        height={41}
-                        width={41}
-                        alt="GitHub logo, click to go to my GitHub page"
-                    />
+                    <Icon icon={githubIcon} width="47" height="47" />
                 </a>
                 <a href="https://www.linkedin.com/in/rajagoat/" target="_blank">
-                    <Image
-                        src={linkedin}
-                        height={41}
-                        width={41}
-                        alt="LinkedIn logo, click to go to my LinkedIn page"
-                    />
+                    <Icon icon={linkedinIcon} width="47" height="47" />
                 </a>
             </div>
         </footer>

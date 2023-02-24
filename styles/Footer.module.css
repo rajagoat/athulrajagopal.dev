@@ -22,3 +22,7 @@
     align-self: center;
     justify-content: space-between;
 }
+
+.social > a {
+    display: inherit;
+}
