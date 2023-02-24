@@ -6,12 +6,18 @@ const ThemeContextProvider = dynamic(() => import("../context/ThemeContext").the
   ssr: false,
 });
 
+const ViewportContextProvider = dynamic(() => import("../context/ViewportContext").then((vc) => vc.ViewportContextProvider), {
+  ssr: false,
+});
+
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeContextProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout >
+      <ViewportContextProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout >
+      </ViewportContextProvider>
     </ThemeContextProvider>
   )
 }
