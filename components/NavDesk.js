@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Navbar.module.css"
+import styles from "../styles/NavDesk.module.css"
 import useTheme from "../hooks/useTheme";
 import { Icon } from "@iconify/react";
 import themeIcon from '@iconify/icons-mdi/theme-light-dark';
