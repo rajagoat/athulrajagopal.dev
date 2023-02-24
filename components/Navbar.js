@@ -8,13 +8,14 @@ import closeIcon from '@iconify/icons-mdi/close';
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(undefined);
+    const [activeTheme, setActiveTheme] = useState('light');
 
-    const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
+    const toggleTheme = () => {
+        const newTheme = activeTheme === 'light' ? 'dark' : 'light';
+        setActiveTheme(newTheme);
     };
 
-    const getMediaQueryPreference = () => {
+    /* const getMediaQueryPreference = () => {
         const mediaQuery = "(prefers-color-scheme: dark)";
         const mql = window.matchMedia(mediaQuery);
         const hasPreference = typeof mql.matches === "boolean";
@@ -35,22 +36,16 @@ const Navbar = () => {
     useEffect(() => {
         const themePreference = getThemePreference();
         if (themePreference !== null) {
-            setDarkMode(themePreference);
+            setTheme(themePreference === "dark");
         } else {
             const mediaQueryPreference = getMediaQueryPreference();
-            setDarkMode(mediaQueryPreference);
+            setTheme(mediaQueryPreference === "dark");
         }
-    }, []);
+    }, []); */
 
     useEffect(() => {
-        if (typeof darkMode !== undefined) {
-            if (darkMode) {
-                setThemePreference("dark");
-            } else {
-                setThemePreference("light");
-            }
-        }
-    }, [darkMode]);
+        document.body.dataset.theme = activeTheme;
+    }, [activeTheme]);
 
     return (
         <nav className={styles.navbar}>
@@ -74,12 +69,12 @@ const Navbar = () => {
                 <Link href="/about">
                     About
                 </Link>
-                <Icon 
+                <Icon
                     icon={themeIcon}
-                    width="49.5" 
-                    height="49.5" 
-                    onClick={() => toggleDarkMode()}
-                    color={darkMode ? "white" : "black"}
+                    width="49.5"
+                    height="49.5"
+                    onClick={() => toggleTheme()}
+                    style={{cursor: "pointer"}}
                 />
             </div>
         </nav>

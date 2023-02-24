@@ -1,15 +1,27 @@
 :root {
   --text-highlight: #fff2ca;
-  --light-mode-color: black;
-  --light-mode-bg: white;
-  --dark-mode-color: white;
-  --dark-mode-bg: #001220;
+}
+
+body,
+body[data-theme="light"] {
+  --color-text-primary: black;
+  --color-text-secondary: white;
+  --color-bg-primary: white;
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: white;
+  --color-text-secondary: #001220;
+  --color-bg-primary: #001220;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  transition: background 0.25s ease-in-out;
 }
 
 .container {
@@ -40,7 +52,6 @@ a {
     color-scheme: dark;
   }
   body {
-    color: var(--dark-mode-color);
-    background: var(--dark-mode-bg);
+    /* color: var(--dark-mode-color); */
   }
 }
