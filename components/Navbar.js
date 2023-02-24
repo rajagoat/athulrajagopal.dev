@@ -15,36 +15,15 @@ const Navbar = () => {
         setActiveTheme(newTheme);
     };
 
-    /* const getMediaQueryPreference = () => {
-        const mediaQuery = "(prefers-color-scheme: dark)";
-        const mql = window.matchMedia(mediaQuery);
-        const hasPreference = typeof mql.matches === "boolean";
-
-        if (hasPreference) {
-            return mql.matches ? "dark" : "light";
-        }
-    };
-
-    const setThemePreference = (pref) => {
-        localStorage.setItem("theme", pref);
-    };
-
-    const getThemePreference = () => {
-        return localStorage.getItem("theme");
-    }
-
     useEffect(() => {
-        const themePreference = getThemePreference();
-        if (themePreference !== null) {
-            setTheme(themePreference === "dark");
-        } else {
-            const mediaQueryPreference = getMediaQueryPreference();
-            setTheme(mediaQueryPreference === "dark");
-        }
-    }, []); */
+        const savedTheme = window.localStorage.getItem("theme");
+        console.log(savedTheme);
+        savedTheme && setActiveTheme(savedTheme);
+    }, []);
 
     useEffect(() => {
         document.body.dataset.theme = activeTheme;
+        window.localStorage.setItem("theme", activeTheme);
     }, [activeTheme]);
 
     return (
