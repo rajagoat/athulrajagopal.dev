@@ -46,12 +46,3 @@ a {
 .secondary-text {
   font-family: 'Lora', serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    /* color: var(--dark-mode-color); */
-  }
-}

@@ -8,18 +8,12 @@ import closeIcon from '@iconify/icons-mdi/close';
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-    const [activeTheme, setActiveTheme] = useState('light');
+    const [activeTheme, setActiveTheme] = useState(document.body.dataset.theme);
 
     const toggleTheme = () => {
         const newTheme = activeTheme === 'light' ? 'dark' : 'light';
         setActiveTheme(newTheme);
     };
-
-    useEffect(() => {
-        const savedTheme = window.localStorage.getItem("theme");
-        console.log(savedTheme);
-        savedTheme && setActiveTheme(savedTheme);
-    }, []);
 
     useEffect(() => {
         document.body.dataset.theme = activeTheme;
