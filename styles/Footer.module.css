@@ -11,6 +11,7 @@
 
 .externalLink {
     background-color: var(--text-highlight);
+    padding-right: 5px;
 }
 
 .social {
