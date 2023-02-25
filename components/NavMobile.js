@@ -36,7 +36,7 @@ const NavMobile = () => {
 
     return (
         <>
-            <nav className={`${styles.navbar} ${activeTheme === "dark" && router.pathname !== "/"  ? styles.navbarDark : styles.navbarLight}`}>
+            <nav className={`${styles.navbar} ${router.pathname !== "/" && (activeTheme === "dark" ? styles.navbarDark : styles.navbarLight)}`}>
                 <div className={styles.logo} style={{visibility: router.pathname === "/" && "hidden"}}>
                     <Link href="/">
                         <Image
