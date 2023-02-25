@@ -2,8 +2,12 @@ import styles from "../styles/Footer.module.css";
 import { Icon } from "@iconify/react";
 import linkedinIcon from "@iconify/icons-mdi/linkedin";
 import githubIcon from "@iconify/icons-mdi/github";
+import useViewport from "../hooks/useViewport";
 
 const Footer = () => {
+    const { width } = useViewport();
+    const BREAKPOINT = 762;
+
     return (
         <footer className={styles.footer}>
             <p>Athul Rajagopal • {new Date().getUTCFullYear()}</p>
@@ -18,10 +22,18 @@ const Footer = () => {
             <p>Built with Next.js</p>
             <div className={styles.social}>
                 <a href="https://github.com/rajagoat" target="_blank">
-                    <Icon icon={githubIcon} width="47" height="47" />
+                    <Icon
+                        icon={githubIcon}
+                        width={width < BREAKPOINT ? 24 : 47}
+                        height={width < BREAKPOINT ? 24 : 47}
+                    />
                 </a>
                 <a href="https://www.linkedin.com/in/rajagoat/" target="_blank">
-                    <Icon icon={linkedinIcon} width="47" height="47" />
+                    <Icon
+                        icon={linkedinIcon}
+                        width={width < BREAKPOINT ? 24 : 47}
+                        height={width < BREAKPOINT ? 24 : 47}
+                    />
                 </a>
             </div>
         </footer>
