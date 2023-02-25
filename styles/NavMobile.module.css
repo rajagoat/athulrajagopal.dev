@@ -15,3 +15,42 @@
 .navbarDark {
     border-bottom: 2px solid white;
 }
+
+.menu {
+    background: var(--color-bg-primary);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 11px;
+    padding-right: 11px;
+}
+
+.links {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 43px 35px 0 0;
+}
+
+.links > a:not(:nth-child(2)) {
+    margin-bottom: 27px;
+}
+
+.subLinks {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.subLinks > a {
+    margin-bottom: 5px;
+}
+
+.subLinks > a:last-child {
+    margin-bottom: 27px;
+}
