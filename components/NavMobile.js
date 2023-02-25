@@ -69,13 +69,13 @@ const NavMobile = () => {
                         Projects
                     </Link>
                     <div className={styles.subLinks}>
-                        <Link href="/projects/gleanr">
+                        <Link href="#">
                             Gleanr
                         </Link>
-                        <Link href="/projects/blue-nile-sport">
+                        <Link href="#">
                             Blue Nile Sport
                         </Link>
-                        <Link href="/projects/onthehouse">
+                        <Link href="#">
                             OnTheHouse
                         </Link>
                     </div>
