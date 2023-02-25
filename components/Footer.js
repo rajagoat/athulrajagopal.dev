@@ -24,15 +24,15 @@ const Footer = () => {
                 <a href="https://github.com/rajagoat" target="_blank">
                     <Icon
                         icon={githubIcon}
-                        width={width < BREAKPOINT ? 24 : 47}
-                        height={width < BREAKPOINT ? 24 : 47}
+                        width={width < BREAKPOINT ? 30 : 47}
+                        height={width < BREAKPOINT ? 30 : 47}
                     />
                 </a>
                 <a href="https://www.linkedin.com/in/rajagoat/" target="_blank">
                     <Icon
                         icon={linkedinIcon}
-                        width={width < BREAKPOINT ? 24 : 47}
-                        height={width < BREAKPOINT ? 24 : 47}
+                        width={width < BREAKPOINT ? 30 : 47}
+                        height={width < BREAKPOINT ? 30 : 47}
                     />
                 </a>
             </div>
