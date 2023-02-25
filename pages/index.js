@@ -15,7 +15,7 @@ export default function Home() {
       <CircleContainer />
       <section className={styles.mainIntro}>
         <h1>Hello<br/>world!</h1>
-        <p>I'm Athul! Keep scrolling to learn a little more about me</p>
+        <p>I&apos;m Athul! Keep scrolling to learn a little more about me</p>
       </section>
     </div>
   )
