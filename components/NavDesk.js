@@ -4,8 +4,11 @@ import styles from "../styles/NavDesk.module.css"
 import useTheme from "../hooks/useTheme";
 import { Icon } from "@iconify/react";
 import themeIcon from '@iconify/icons-mdi/theme-light-dark';
+import { useRouter } from "next/router";
 
 const NavDesk = () => {
+    const router = useRouter();
+
     const {activeTheme, setActiveTheme} = useTheme();
 
     const toggleTheme = () => {
@@ -15,7 +18,7 @@ const NavDesk = () => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.logo}>
+            <div className={styles.logo} style={{visibility: router.pathname === "/" && "hidden"}}>
                 <Link href="/">
                     <Image
                         src="/icons/favicon.png"

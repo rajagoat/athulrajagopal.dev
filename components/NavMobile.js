@@ -17,6 +17,8 @@ const NavMobile = () => {
     const toggleTheme = () => {
         const newTheme = activeTheme === 'light' ? 'dark' : 'light';
         setActiveTheme(newTheme);
+        // this will close the menu when dark mode is toggled
+        setMenuIsOpen(false);
     };
 
     const openMenu = () => {
@@ -34,8 +36,8 @@ const NavMobile = () => {
 
     return (
         <>
-            <nav className={`${styles.navbar} ${activeTheme === "dark" ? styles.navbarDark : styles.navbarLight}`}>
-                <div className={styles.logo}>
+            <nav className={`${styles.navbar} ${router.pathname !== "/" && (activeTheme === "dark" ? styles.navbarDark : styles.navbarLight)}`}>
+                <div className={styles.logo} style={{visibility: router.pathname === "/" && "hidden"}}>
                     <Link href="/">
                         <Image
                             src="/icons/favicon.png"
