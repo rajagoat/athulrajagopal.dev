@@ -1,3 +1,24 @@
 .mainIntro {
     margin: 310px 21px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrowDown {
+    align-self: center;
+    margin-top: 19px;
+}
+
+.divider {
+    position: relative;
+    width: 654px;
+    height: 147px;
+    overflow: hidden;
+}
+
+.divider > img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
 }

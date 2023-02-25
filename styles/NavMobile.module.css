@@ -26,6 +26,7 @@
     width: 100vw;
     padding-top: 11px;
     padding-right: 11px;
+    z-index: 999;
 }
 
 .links {
