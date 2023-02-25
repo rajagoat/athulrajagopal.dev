@@ -17,6 +17,8 @@ const NavMobile = () => {
     const toggleTheme = () => {
         const newTheme = activeTheme === 'light' ? 'dark' : 'light';
         setActiveTheme(newTheme);
+        // this will close the menu when dark mode is toggled
+        setMenuIsOpen(false);
     };
 
     const openMenu = () => {
