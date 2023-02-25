@@ -1,29 +1,3 @@
-.container {
-}
-
-.circleContainer {
-    position: absolute;
-    top: 0;
-    /* width: 1440px; */
-    min-height: 100vh;
-    /* overflow: hidden; */
-    z-index: -2;
-}
-
-.memoji {
-    position: absolute;
-    left: 111.5px;
-    top: 214.5px;
-    z-index: -1;
-}
-
-@media screen and (max-width: 762px) {
-    .memoji {
-        left: 6px;
-        top: 80px;
-    }
-    .circleContainer {
-        width: 320px;
-        /* overflow: hidden */
-    }
+.mainIntro {
+    margin: 310px 21px 0;
 }
