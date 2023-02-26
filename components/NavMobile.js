@@ -6,7 +6,6 @@ import themeIcon from '@iconify/icons-mdi/theme-light-dark';
 import menuIcon from '@iconify/icons-mdi/menu';
 import closeIcon from '@iconify/icons-mdi/close';
 import useTheme from "../hooks/useTheme";
-import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import useMenu from "../hooks/useMenu";
 
@@ -29,11 +28,6 @@ const NavMobile = () => {
     const closeMenu = () => {
         setMenuIsOpen(false);
     }
-
-    // this will close the menu on each redirect
-    useEffect(() => {
-        setMenuIsOpen(false);
-    }, [router]);
 
     return (
         <>
@@ -65,24 +59,42 @@ const NavMobile = () => {
                     style={{ cursor: "pointer" }}
                 />
                 <div className={styles.links}>
-                    <Link href="/experience">
+                    <Link
+                        href="/experience"
+                        onClick={() => closeMenu()}
+                    >
                         Experience
                     </Link>
-                    <Link href="/projects">
+                    <Link
+                        href="/projects"
+                        onClick={() => closeMenu()}
+                    >
                         Projects
                     </Link>
                     <div className={styles.subLinks}>
-                        <Link href="#">
+                        <Link
+                            href="#"
+                            onClick={() => closeMenu()}
+                        >
                             Gleanr
                         </Link>
-                        <Link href="#">
+                        <Link
+                            href="#"
+                            onClick={() => closeMenu()}
+                        >
                             Blue Nile Sport
                         </Link>
-                        <Link href="#">
+                        <Link
+                            href="#"
+                            onClick={() => closeMenu()}
+                        >
                             OnTheHouse
                         </Link>
                     </div>
-                    <Link href="/about">
+                    <Link
+                        href="/about"
+                        onClick={() => closeMenu()}
+                    >
                         About
                     </Link>
                     <Icon
