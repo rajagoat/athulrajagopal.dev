@@ -1,0 +1,30 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 21px 0;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.row:nth-child(odd)>div:first-child {
+    margin-left: -40px;
+}
+
+.row:nth-child(even)>div:first-child {
+    margin-left: 70px;
+}
+
+.row:nth-child(odd)>div:not(:first-child) {
+    margin-left: 12px;
+}
+
+.row:nth-child(even)>div:not(:first-child) {
+    margin-left: 12px;
+}

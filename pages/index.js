@@ -5,6 +5,7 @@ import CircleContainer from '../components/CircleContainer';
 import { Icon } from '@iconify/react';
 import arrowDown from '@iconify/icons-mdi/arrow-down';
 import undrawTeam from "../public/assets/undraw-engineering-team.svg";
+import SkillsContainer from '../components/SkillsContainer';
 
 export default function Home() {
   return (
@@ -47,6 +48,26 @@ export default function Home() {
           />
           <div className={styles.mainText}>
             <p>Here’s some of the tools and technologies I have picked up along the way:</p>
+          </div>
+          <SkillsContainer
+              skills={[
+                "C",
+                "C++",
+                "Java",
+                "JavaScript",
+                "TypeScript",
+                "Node.js",
+                "Express",
+                "React",
+                "Next.js",
+                "REST API",
+                "SQL",
+                "NoSQL"
+              ]}
+              numberPerRow={2}
+            />
+          <div className={styles.mainText}>
+            <p>To learn even more about me, check out the links below. Or if you prefer, here&apos;s my resume.</p>
           </div>
         </section>
       </div>
