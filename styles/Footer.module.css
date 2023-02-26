@@ -31,6 +31,7 @@
 @media screen and (max-width: 762px) {
     .footer {
       font-size: 16px;
+      margin: 15px 0;
     }
     .social {
         width: 60px;
