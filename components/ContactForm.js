@@ -9,7 +9,7 @@ const ContactForm = () => {
         <>
             <div className={styles.mainText}>
                 <p>Want to get in touch?</p>
-                <p>Send me an email at <a href="mailto:athul.rajagopal@ucalgary.ca">athul.rajagopal@ucalgary.ca</a>, or send in a form below! I’ll get back to you as soon as I can.
+                <p>Send me an email at <u><a href="mailto:athul.rajagopal@ucalgary.ca">athul.rajagopal@ucalgary.ca</a></u>, or send in a form below! I’ll get back to you as soon as I can.
                 </p>
             </div>
             <form className={styles.contactForm} onSubmit={(e) => handleSubmit(e)}>
