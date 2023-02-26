@@ -40,6 +40,7 @@
 }
 
 .mainText {
+    align-self: flex-start;
     margin: 0 20px;
 }
 

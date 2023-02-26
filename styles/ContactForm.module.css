@@ -1,0 +1,50 @@
+.mainText {
+    margin: 0 20px;
+}
+
+.mainText > p {
+    margin-bottom: 20px;
+}
+
+.contactForm {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm>label {
+    align-self: flex-start;
+}
+
+.contactForm>input {
+    height: 30px;
+}
+
+.contactForm>textarea {
+    height: 96px;
+}
+
+.contactForm>input, .contactForm>textarea {
+    border: none;
+    width: 90vw;
+    border-radius: 10px;
+    margin: 7px 0;
+}
+
+.contactForm>button {
+    all: unset;
+    color: white;
+    background-color: #0559DB;
+    width: 106px;
+    height: 30px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.contactForm>button:active {
+    box-shadow: none;
+}

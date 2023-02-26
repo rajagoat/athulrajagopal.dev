@@ -7,6 +7,7 @@ import arrowDown from '@iconify/icons-mdi/arrow-down';
 import undrawTeam from "../public/assets/undraw-engineering-team.svg";
 import SkillsContainer from '../components/SkillsContainer';
 import Links from '../components/Links';
+import ContactForm from '../components/ContactForm';
 
 export default function Home() {
   return (
@@ -28,13 +29,7 @@ export default function Home() {
         />
       </section>
       <div className={styles.offset}>
-        <div className={styles.divider}>
-          {/* <Image
-          src={layeredWaves}
-          fill
-          alt="waves in several shades of blue"
-        /> */}
-        </div>
+        <div className={styles.divider} />
         <section className={styles.main}>
           <div className={styles.mainText}>
             <p>Welcome to my page!</p>
@@ -79,6 +74,7 @@ export default function Home() {
               "About"
             ]}
           />
+          <ContactForm />
         </section>
       </div>
     </div>
