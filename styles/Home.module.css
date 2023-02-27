@@ -26,11 +26,17 @@
     margin-bottom: -200px;
 }
 
+.mainBackground {
+    width: 100%;
+    background: #C0DFFC;
+}
+
 .main {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #C0DFFC;
     color: black;
     padding-top: 30px;
     padding-bottom: 11px;
