@@ -42,7 +42,7 @@
     padding-bottom: 11px;
 }
 
-.main > img {
+.main>img {
     margin: 28px 0 38px;
 }
 
@@ -51,11 +51,32 @@
     margin: 0 20px;
 }
 
-.mainText > p {
+.mainText>p {
     margin-bottom: 12px;
 }
 
+@media screen and (max-width: 762px) {
+    .mainIntro>h1 {
+        width: 1px;
+    }
+}
+
 @media screen and (min-width: 762px) {
+    .mainIntro {
+        margin: 310px 0 0 50vw;
+        font-size: 64px;
+    }
+
+    .mainIntro>p {
+        font-size: 32px;
+    }
+
+    .arrowDown {
+        align-self: flex-start;
+        margin-top: 40px;
+        margin-left: 240px;
+    }
+
     .divider {
         bottom: 600px;
         width: 112.5vw;
@@ -63,13 +84,17 @@
         aspect-ratio: 900/450;
     }
 
-    .mainText {
-        margin: 0 85px;
-    }
-
     .offset {
         position: relative;
         bottom: 450px;
         margin-bottom: -450px;
+    }
+
+    .main>img {
+        margin: 77px 0 87px;
+    }
+
+    .mainText {
+        margin: 0 85px;
     }
 }

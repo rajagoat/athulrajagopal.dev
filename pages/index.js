@@ -8,8 +8,12 @@ import undrawTeam from "../public/assets/undraw-engineering-team.svg";
 import SkillsContainer from '../components/SkillsContainer';
 import Links from '../components/Links';
 import ContactForm from '../components/ContactForm';
+import useViewport from "../hooks/useViewport";
 
 export default function Home() {
+  const { width } = useViewport();
+  const BREAKPOINT = 726;
+
   return (
     <>
       <Head>
@@ -19,12 +23,12 @@ export default function Home() {
       </Head>
       <CircleContainer />
       <section className={styles.mainIntro}>
-        <h1>Hello<br />world!</h1>
+        <h1>Hello world!</h1>
         <p>I&apos;m Athul! Keep scrolling to learn a little more about me</p>
         <Icon
           icon={arrowDown}
-          width="36"
-          height="36"
+          width={width < BREAKPOINT ? "36" : "64"}
+          height={width < BREAKPOINT ? "36" : "64"}
           className={styles.arrowDown}
         />
       </section>
@@ -39,8 +43,8 @@ export default function Home() {
             </div>
             <Image
               src={undrawTeam}
-              width={280}
-              height={143}
+              width={width < BREAKPOINT ? 280 : 560}
+              height={width < BREAKPOINT ? 143 : 286}
               alt="team of software engineers speaking with one another"
             />
             <div className={styles.mainText}>
@@ -61,7 +65,7 @@ export default function Home() {
                 "SQL",
                 "NoSQL"
               ]}
-              numberPerRow={2}
+              numberPerRow={width < BREAKPOINT ? 2 : 3}
             />
             <div className={styles.mainText}>
               <p>To learn even more about me, check out the links below. Or if you prefer,

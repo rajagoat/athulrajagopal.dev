@@ -28,3 +28,29 @@
 .row:nth-child(even)>div:not(:first-child) {
     margin-left: 12px;
 }
+
+@media screen and (min-width: 762px) {
+    .skillsContainer {
+        margin: 50px 0;
+    }
+
+    .row:not(:last-child) {
+        margin-bottom: 21px;
+    }
+
+    .row:nth-child(odd)>div:first-child {
+        margin-left: -80px;
+    }
+
+    .row:nth-child(even)>div:first-child {
+        margin-left: 140px;
+    }
+
+    .row:nth-child(odd)>div:not(:first-child) {
+        margin-left: 24px;
+    }
+
+    .row:nth-child(even)>div:not(:first-child) {
+        margin-left: 24px;
+    }
+}
