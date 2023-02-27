@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Montserrat } from "next/font/google";
+import useMenu from "../hooks/useMenu";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -8,8 +9,16 @@ const montserrat = Montserrat({
 });
 
 const Layout = ({ children }) => {
+    const { menuIsOpen } = useMenu();
+
     return (
-        <div className={`${montserrat.className} container`}>
+        <div 
+            className={`${montserrat.className} 
+            container`}
+            style={{
+                maxHeight: menuIsOpen && "100vh"
+            }}
+        >
             <Navbar />
             <div className="main">
                 {children}

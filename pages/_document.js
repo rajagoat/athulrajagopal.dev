@@ -21,7 +21,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head />
-                <body>
+                <body style={{overflowX: "hidden"}}>
                     <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
                     <Main />
                     <NextScript />

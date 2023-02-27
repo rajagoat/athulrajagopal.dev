@@ -1,3 +1,100 @@
 .mainIntro {
     margin: 310px 21px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrowDown {
+    align-self: center;
+    margin-top: 35px;
+}
+
+.divider {
+    position: relative;
+    top: 11px;
+    width: 100vw;
+    aspect-ratio: 900/1000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../public/assets/layered-waves-haikei.svg');
+}
+
+.offset {
+    position: relative;
+    bottom: 200px;
+    margin-bottom: -200px;
+}
+
+.mainBackground {
+    width: 100%;
+    background: #C0DFFC;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 11px;
+}
+
+.main>img {
+    margin: 28px 0 38px;
+}
+
+.mainText {
+    align-self: flex-start;
+    margin: 0 20px;
+}
+
+.mainText>p {
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 762px) {
+    .mainIntro>h1 {
+        width: 1px;
+    }
+}
+
+@media screen and (min-width: 762px) {
+    .mainIntro {
+        margin: 310px 0 0 50vw;
+        font-size: 64px;
+    }
+
+    .mainIntro>p {
+        font-size: 32px;
+    }
+
+    .arrowDown {
+        align-self: flex-start;
+        margin-top: 40px;
+        margin-left: 240px;
+    }
+
+    .divider {
+        bottom: 600px;
+        width: 112.5vw;
+        left: -12.5vw;
+        aspect-ratio: 900/450;
+    }
+
+    .offset {
+        position: relative;
+        bottom: 450px;
+        margin-bottom: -450px;
+    }
+
+    .main>img {
+        margin: 77px 0 87px;
+    }
+
+    .mainText {
+        margin: 0 85px;
+    }
 }

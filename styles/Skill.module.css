@@ -1,0 +1,18 @@
+.skill {
+    width: 106px;
+    height: 25px;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 762px) {
+    .skill {
+        width: 212px;
+        height: 50px;
+        border-radius: 24px;
+    }
+}

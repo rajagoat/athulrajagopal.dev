@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Layout from '../components/Layout'
+import { MenuContextProvider } from "../context/MenuContext";
 import '../styles/globals.css'
 
 const ThemeContextProvider = dynamic(() => import("../context/ThemeContext").then((tc) => tc.ThemeContextProvider), {
@@ -14,9 +15,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeContextProvider>
       <ViewportContextProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout >
+        <MenuContextProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout >
+        </MenuContextProvider>
       </ViewportContextProvider>
     </ThemeContextProvider>
   )
