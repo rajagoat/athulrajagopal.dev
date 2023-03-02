@@ -3,10 +3,10 @@ import { Icon } from "@iconify/react";
 import linkedinIcon from "@iconify/icons-mdi/linkedin";
 import githubIcon from "@iconify/icons-mdi/github";
 import useViewport from "../hooks/useViewport";
+import { BREAKPOINT } from "../constants";
 
 const Footer = () => {
     const { width } = useViewport();
-    const BREAKPOINT = 827;
 
     return (
         <footer className={styles.footer}>
@@ -15,7 +15,7 @@ const Footer = () => {
                 <i> <a href="https://undraw.co/" target="_blank" className={styles.externalLink}>
                     undraw
                 </a></i> and
-                <i> <a href="https://undraw.co/" target="_blank" className={styles.externalLink}>
+                <i> <a href="https://haikei.app/" target="_blank" className={styles.externalLink}>
                     haikei
                 </a></i>
             </p>

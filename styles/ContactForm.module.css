@@ -60,6 +60,10 @@
         margin: 0 85px;
     }
 
+    .contactForm {
+        margin: 40px 0 30px;
+    }
+
     .contactForm>label {
         font-size: 22px;
     }

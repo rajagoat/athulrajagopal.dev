@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Circle from '../components/Circle'
 import styles from '../styles/CircleContainer.module.css'
 import useViewport from "../hooks/useViewport";
+import { BREAKPOINT, SCALE_FACTOR } from '../constants';
 
 const CircleContainer = () => {
     const { width } = useViewport();
-    const BREAKPOINT = 827;
 
     return (
         <div className={styles.circleContainer}>
@@ -15,8 +15,8 @@ const CircleContainer = () => {
             <Circle size={78} backgroundColor={"#7DB5F6"} minTop={284} top={539.5} minLeft={227} left={459} />
             <Image
                 src="/assets/memoji-wave.jpg"
-                width={width < BREAKPOINT ? 220 : 346.27}
-                height={width < BREAKPOINT ? 256 : 402.93}
+                width={width < BREAKPOINT ? 220 : 220 * SCALE_FACTOR}
+                height={width < BREAKPOINT ? 256 : 256 * SCALE_FACTOR}
                 className={styles.memoji}
                 alt="Apple Memoji waving"
                 priority
