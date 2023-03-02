@@ -2,7 +2,7 @@ import useViewport from "../hooks/useViewport";
 
 const Circle = ({ size, backgroundColor, top, left, right, minTop, minLeft, minRight }) => {
     const { width } = useViewport();
-    const BREAKPOINT = 762;
+    const BREAKPOINT = 827;
     const SCALE_FACTOR = 1.57;
 
     const determineTop = () => {

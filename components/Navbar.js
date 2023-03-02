@@ -4,7 +4,7 @@ import useViewport from "../hooks/useViewport";
 
 const Navbar = () => {
     const { width } = useViewport();
-    const NAV_BREAKPOINT = 762;
+    const NAV_BREAKPOINT = 827;
 
     return (
         width < NAV_BREAKPOINT ? <NavMobile/> : <NavDesk/>

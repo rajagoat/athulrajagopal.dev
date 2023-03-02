@@ -6,7 +6,7 @@ import useViewport from "../hooks/useViewport";
 
 const Footer = () => {
     const { width } = useViewport();
-    const BREAKPOINT = 762;
+    const BREAKPOINT = 827;
 
     return (
         <footer className={styles.footer}>
