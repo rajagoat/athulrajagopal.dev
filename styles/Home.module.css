@@ -87,6 +87,8 @@
         width: 112.5vw;
         left: -12.5vw;
         aspect-ratio: 900/450;
+        /* helps minimize weird border after svg */
+        border-bottom: 2px solid #C0DFFC;
     }
 
     .offset {
