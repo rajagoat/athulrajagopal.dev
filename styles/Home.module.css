@@ -70,6 +70,7 @@
     .mainIntro {
         margin: 240px 0 0 50%;
         font-size: 64px;
+        max-width: 45%;
     }
 
     .mainIntro>p {
