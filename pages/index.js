@@ -21,17 +21,19 @@ export default function Home() {
         <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
         <link rel="icon" type="image/png" href="/icons/favicon.png" />
       </Head>
-      <CircleContainer />
-      <section className={styles.mainIntro}>
-        <h1>Hello world!</h1>
-        <p>I&apos;m Athul! Keep scrolling to learn a little more about me</p>
-        <Icon
-          icon={arrowDown}
-          width={width < BREAKPOINT ? "36" : "64"}
-          height={width < BREAKPOINT ? "36" : "64"}
-          className={styles.arrowDown}
-        />
-      </section>
+      <div className={styles.mainIntroContainer}>
+        <CircleContainer />
+        <section className={styles.mainIntro}>
+          <h1>Hello world!</h1>
+          <p>I&apos;m Athul! Keep scrolling to learn a little more about me</p>
+          <Icon
+            icon={arrowDown}
+            width={width < BREAKPOINT ? "36" : "64"}
+            height={width < BREAKPOINT ? "36" : "64"}
+            className={styles.arrowDown}
+          />
+        </section>
+      </div>
       <div className={styles.offset}>
         <div className={styles.divider} />
         <div className={styles.mainBackground}>
