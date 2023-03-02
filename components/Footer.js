@@ -15,7 +15,7 @@ const Footer = () => {
                 <i> <a href="https://undraw.co/" target="_blank" className={styles.externalLink}>
                     undraw
                 </a></i> and
-                <i> <a href="https://undraw.co/" target="_blank" className={styles.externalLink}>
+                <i> <a href="https://haikei.app/" target="_blank" className={styles.externalLink}>
                     haikei
                 </a></i>
             </p>
