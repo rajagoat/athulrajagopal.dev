@@ -9,7 +9,7 @@ const CircleContainer = () => {
 
     return (
         <div className={styles.circleContainer}>
-            <Circle size={89} backgroundColor={"#0559DB"} minTop={-10} top={72.8} minLeft={-21} left={69} />
+            <Circle size={89} backgroundColor={"#0559DB"} minTop={-10} top={72.8} minLeft={-21} left={0} />
             <Circle size={208} backgroundColor={"#4088EC"} minTop={-102} top={-72} minLeft={240} left={370} />
             <Circle size={220} backgroundColor={"#C0DFFC"} minTop={116} top={271} minLeft={6} left={111.5} />
             <Circle size={78} backgroundColor={"#7DB5F6"} minTop={284} top={539.5} minLeft={227} left={459} />

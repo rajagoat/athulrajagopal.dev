@@ -1,3 +1,8 @@
+.mainIntroContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .mainIntro {
     margin: 310px 21px 0;
     display: flex;
@@ -63,7 +68,7 @@
 
 @media screen and (min-width: 762px) {
     .mainIntro {
-        margin: 310px 0 0 50vw;
+        margin: 240px 0 0 50%;
         font-size: 64px;
     }
 
@@ -73,8 +78,7 @@
 
     .arrowDown {
         align-self: flex-start;
-        margin-top: 40px;
-        margin-left: 240px;
+        margin-left: 40%;
     }
 
     .divider {
@@ -85,9 +89,8 @@
     }
 
     .offset {
-        position: relative;
-        bottom: 450px;
-        margin-bottom: -450px;
+        bottom: 31vw;
+        margin-bottom: -31vw;
     }
 
     .main>img {
