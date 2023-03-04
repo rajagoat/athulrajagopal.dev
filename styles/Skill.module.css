@@ -9,6 +9,14 @@
     border-radius: 12px;
 }
 
+@media screen and (min-width: 500px) {
+    .skill {
+        width: 159px;
+        height: 37.5px;
+        border-radius: 18px;
+    }
+}
+
 @media screen and (min-width: 762px) {
     .skill {
         width: min(20vw, 212px);

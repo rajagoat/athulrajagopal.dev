@@ -1,26 +1,50 @@
 import Image from 'next/image'
 import Circle from '../components/Circle'
 import styles from '../styles/CircleContainer.module.css'
-import useViewport from "../hooks/useViewport";
-import { BREAKPOINT, SCALE_FACTOR } from '../constants';
 
 const CircleContainer = () => {
-    const { width } = useViewport();
-
     return (
         <div className={styles.circleContainer}>
-            <Circle size={89} backgroundColor={"#0559DB"} minTop={-10} top={72.8} minLeft={-21} left={35} />
-            <Circle size={208} backgroundColor={"#4088EC"} minTop={-102} top={-72} minLeft={240} left={370} />
-            <Circle size={220} backgroundColor={"#C0DFFC"} minTop={116} top={271} minLeft={6} left={111.5} />
-            <Circle size={78} backgroundColor={"#7DB5F6"} minTop={284} top={539.5} minLeft={227} left={459} />
-            <Image
-                src="/assets/memoji-wave.jpg"
-                width={width < BREAKPOINT ? 220 : 220 * SCALE_FACTOR}
-                height={width < BREAKPOINT ? 256 : 256 * SCALE_FACTOR}
-                className={styles.memoji}
-                alt="Apple Memoji waving"
-                priority
+            <Circle 
+                size={89} 
+                backgroundColor={"#0559DB"} 
+                topSm={-10}
+                topMd={60} 
+                topLg={72.8} 
+                leftSm={-21}
+                leftMd={30} 
+                leftLg={35} 
             />
+            <Circle 
+                size={208} 
+                backgroundColor={"#4088EC"} 
+                topSm={-102} 
+                topMd={-72} 
+                topLg={-72} 
+                leftSm={240}
+                leftMd={270}  
+                leftLg={370} 
+            />
+            <Circle 
+                size={77} 
+                backgroundColor={"#7DB5F6"} 
+                topSm={344}
+                topMd={440}  
+                topLg={510} 
+                leftSm={257}
+                leftMd={360}
+                leftLg={429} 
+            />
+            <div className={styles.memoji}>
+                <Image
+                    src="/assets/memoji-wave.png"
+                    fill
+                    alt="Apple Memoji of me waving"
+                    priority
+                    sizes="600px,
+                            (min-width :1294px) 900px"
+                />
+            </div>
         </div>
     );
 }
