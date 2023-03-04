@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90vw;
+    max-width: 86vw;
 }
 
 .contactForm>label {
@@ -30,7 +30,7 @@
 .contactForm>input, .contactForm>textarea {
     border: none;
     outline: none;
-    width: 90vw;
+    width: 86vw;
     border-radius: 10px;
     font-family: inherit;
     font-size: 14px;
@@ -55,11 +55,13 @@
     box-shadow: none;
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 500px) {
     .mainText {
-        margin: 0 85px;
+        margin: 0 6%;
     }
+}
 
+@media screen and (min-width: 762px) {
     .contactForm {
         margin: 40px 0 30px;
     }
@@ -81,5 +83,11 @@
         height: 50px;
         border-radius: 14px;
         font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainText {
+        margin: 0 85px;
     }
 }

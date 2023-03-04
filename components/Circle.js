@@ -1,16 +1,38 @@
 import useViewport from "../hooks/useViewport";
-import { BREAKPOINT, SCALE_FACTOR } from "../constants";
+import { BREAKPOINT_MD, BREAKPOINT_LG, SCALE_FACTOR_MD, SCALE_FACTOR_LG } from "../constants";
 
-const Circle = ({ size, backgroundColor, top, left, minTop, minLeft }) => {
+const Circle = ({ size, backgroundColor, topSm, topMd, topLg, leftSm, leftMd, leftLg  }) => {
     const { width } = useViewport();
 
     const determineTop = () => {
-        return width < BREAKPOINT ? minTop : top;
+        if (width < BREAKPOINT_MD) {
+            return topSm;
+        } else if (width < BREAKPOINT_LG) {
+            return topMd;
+        } else {
+            return topLg;
+        }
     };
 
     const determineLeft = () => {
-        return width < BREAKPOINT ? minLeft : left;
-    }
+        if (width < BREAKPOINT_MD) {
+            return leftSm;
+        } else if (width < BREAKPOINT_LG) {
+            return leftMd;
+        } else {
+            return leftLg;
+        }
+    };
+
+    const determineSize = () => {
+        if (width < BREAKPOINT_MD) {
+            return size;
+        } else if (width < BREAKPOINT_LG) {
+            return size * SCALE_FACTOR_MD;
+        } else {
+            return size * SCALE_FACTOR_LG;
+        }
+    };
 
     return (
         <div
@@ -18,8 +40,8 @@ const Circle = ({ size, backgroundColor, top, left, minTop, minLeft }) => {
                 position: "absolute",
                 top: determineTop(),
                 left: determineLeft(),
-                height: width < BREAKPOINT ? size : size * SCALE_FACTOR,
-                width: width < BREAKPOINT ? size : size * SCALE_FACTOR,
+                height: determineSize(),
+                width: determineSize(),
                 backgroundColor,
                 borderRadius: '50%',
                 zIndex: -1,

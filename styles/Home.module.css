@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+.mainIntro>h1 {
+    width: 1px;
+}
+
 .arrowDown {
     align-self: center;
     margin-top: 35px;
@@ -23,12 +27,14 @@
     background-position: center;
     background-size: cover;
     background-image: url('../public/assets/layered-waves-haikei.svg');
+    /* helps minimize weird border after svg */
+    border-bottom: 10px solid #C0DFFC;
 }
 
 .offset {
     position: relative;
-    bottom: 200px;
-    margin-bottom: -200px;
+    bottom: 66vw;
+    margin-bottom: -66vw;
 }
 
 .mainBackground {
@@ -60,26 +66,19 @@
     margin-bottom: 12px;
 }
 
-@media screen and (max-width: 762px) {
-    .mainIntro>h1 {
-        width: 1px;
-    }
-}
-
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 500px) {
     .mainIntro {
-        margin: 240px 0 0 50%;
-        font-size: 64px;
-        max-width: 45%;
+        margin: 484px 0 0 6%;
+        padding-right: 20px;
+    }
+
+    .mainIntro>h1 {
+        font-size: 40px;
+        width: auto;
     }
 
     .mainIntro>p {
-        font-size: 32px;
-    }
-
-    .arrowDown {
-        align-self: flex-start;
-        margin-left: 40%;
+        font-size: 23px;
     }
 
     .divider {
@@ -101,6 +100,66 @@
     }
 
     .mainText {
+        margin: 0 6%;
+    }
+}
+
+@media screen and (min-width: 687px) {
+    .mainIntro {
+        margin: 221px 0 0 55%;
+    }
+
+    .arrowDown {
+        align-self: flex-start;
+        margin-left: 40%;
+        margin-top: 55px;
+    }
+
+    .offset {
+        bottom: 26vw;
+        margin-bottom: -26vw;
+    }
+}
+
+@media screen and (min-width: 793px) {
+    .mainIntro {
+        margin: 238px 0 0 48%;
+    }
+
+    .arrowDown {
+        margin-top: 68px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainIntro {
+        margin: 171px 0 0 48%;
+    }
+
+    .offset {
+        bottom: 30vw;
+        margin-bottom: -30vw;
+    }
+
+    .mainText {
         margin: 0 85px;
+    }
+}
+
+@media screen and (min-width: 1294px) {
+    .mainIntro {
+        margin: 225px 0 0 48%;
+    }
+
+    .mainIntro>h1 {
+        font-size: 64px;
+    }
+
+    .mainIntro>p {
+        font-size: 23px;
+    }
+
+    .arrowDown {
+        margin-top: 8vh;
     }
 }

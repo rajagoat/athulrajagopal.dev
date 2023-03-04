@@ -2,6 +2,8 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    /* prevents wave from overlapping navbar */
+    z-index: 99;
 }
 
 .navbar {
@@ -15,13 +17,23 @@
 .links {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .links > a {
-    margin-right: 66px;
+    margin-right: 46px;
 }
 
 .themeIcon {
     cursor: pointer;
+}
+
+@media screen and (min-width: 1128px) {
+    .links {
+        font-size: 24px;
+    }
+
+    .links > a {
+        margin-right: 66px;
+    }
 }

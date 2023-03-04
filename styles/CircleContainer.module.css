@@ -1,24 +1,32 @@
 .circleContainer {
     position: absolute;
     top: 0;
-    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
     z-index: -2;
 }
 
 .memoji {
-    position: absolute;
-    left: 111.5px;
-    top: 214.5px;
-    z-index: -1;
+    position: relative;
+    width: 232px;
+    left: 44px;
+    top: 65px;
+    aspect-ratio: 220/256;
 }
 
-@media screen and (max-width: 827px) {
+@media screen and (min-width: 500px) {
     .memoji {
-        left: 6px;
-        top: 80px;
+        left: 111.5px;
+        top: 173.5px;
+        width: 246px;
     }
-    .circleContainer {
-        width: 320px;
-        /* overflow: hidden */
+}
+
+@media screen and (min-width: 1294px) {
+    .memoji {
+        width: 310px;
+        left: 120px;
+        top: 186px;
     }
 }
