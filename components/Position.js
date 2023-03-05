@@ -4,6 +4,7 @@ import styles from "../styles/Position.module.css";
 const Position = (
     {
         logo,
+        marginTop,
         positionTitle,
         organization,
         dateRange,
@@ -22,7 +23,10 @@ const Position = (
                     style={{width: "100%", height: "auto"}}
                 />
             </div>
-            <div className={styles.positionInformation}>
+            <div 
+                className={styles.positionInformation}
+                style={{marginTop}}
+            >
                 <h2>{positionTitle}</h2>
                 <p>{organization}</p>
                 <i>{dateRange}</i>

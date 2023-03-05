@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from "../styles/Experience.module.css";
 import useTheme from "../hooks/useTheme";
+import useVieport from "../hooks/useViewport";
+import { BREAKPOINT_NAV } from "../constants/index";
 import Position from '../components/Position';
 import ctsDark from "../public/logos/cts-logo-dark.png";
 import ctsLight from "../public/logos/cts-logo-light.png";
@@ -9,6 +11,7 @@ import ctcLight from "../public/logos/ctc-logo-light.png";
 
 const Experience = () => {
     const { activeTheme } = useTheme();
+    const { width } = useVieport();
 
     return (
         <>
@@ -32,6 +35,7 @@ const Experience = () => {
                 />
                 <Position
                     logo={activeTheme === "dark" ? ctcDark : ctcLight}
+                    marginTop={width < BREAKPOINT_NAV && 40}
                     positionTitle={"VP Technology"}
                     organization={"Code the Change YYC"}
                     dateRange={"October 2020 — June 2022"}
