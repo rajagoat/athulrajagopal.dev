@@ -4,6 +4,8 @@ import useTheme from "../hooks/useTheme";
 import Position from '../components/Position';
 import ctsDark from "../public/logos/cts-logo-dark.png";
 import ctsLight from "../public/logos/cts-logo-light.png";
+import ctcDark from "../public/logos/ctc-logo-dark.png";
+import ctcLight from "../public/logos/ctc-logo-light.png";
 
 const Experience = () => {
     const { activeTheme } = useTheme();
@@ -26,6 +28,17 @@ const Experience = () => {
                         "Developing mission-critical software for Calgary’s first student-built satellite",
                         "Programming communication modules for an STM32 microcontroller",
                         "Working with several serial communication technologies"
+                    ]}
+                />
+                <Position
+                    logo={activeTheme === "dark" ? ctcDark : ctcLight}
+                    positionTitle={"VP Technology"}
+                    organization={"Code the Change YYC"}
+                    dateRange={"October 2020 — June 2022"}
+                    accomplishments={[
+                        "Designed and developed websites for non-profit organizations",
+                        "Optimized code to efficiently handle large amounts of operational data",
+                        "Improved project workflows by 33% through implementing best programming practices"
                     ]}
                 />
             </main>
