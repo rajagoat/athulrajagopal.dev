@@ -6,9 +6,15 @@ const lora = Lora({
   weight: ['400']
 });
 
-const Skill = ({name}) => {
+const Skill = ({name, color, backgroundColor}) => {
     return (
-        <div className={`${lora.className} ${styles.skill}`}>
+        <div 
+          className={`${lora.className} ${styles.skill}`}
+          style={{
+            color,
+            backgroundColor
+          }}
+        >
           <p>{name}</p>
         </div>
     );

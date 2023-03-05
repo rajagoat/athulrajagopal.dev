@@ -9,6 +9,10 @@
  .experience {
     margin: 25px 0;
  }
+
+ .experience > h1 {
+    margin-bottom: 20px;
+ }
 }
 
 @media screen and (min-width: 1024px) {
