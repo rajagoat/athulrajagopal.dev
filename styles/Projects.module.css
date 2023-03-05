@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.projectPreviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+}
+
 @media screen and (min-width: 500px) {
     .projects>h1 {
         margin-bottom: 20px;
