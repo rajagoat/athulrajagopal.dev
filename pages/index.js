@@ -60,7 +60,7 @@ export default function Home() {
               alt="team of software engineers speaking with one another"
             />
             <div className={styles.mainText}>
-              <p>Here’s some of the tools and technologies I have picked up along the way:</p>
+              <p>Here are some tools and technologies I have picked up along the way:</p>
             </div>
             <SkillsContainer
               skills={[
