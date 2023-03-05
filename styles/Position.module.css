@@ -6,24 +6,34 @@
     margin: 20px 20px;
 }
 
-.positionInformation>h2 {
+.information>h2 {
     font-size: 20px;
     margin: 0;
 }
 
-.positionInformation>i {
+.information>i {
     display: block;
     font-size: 16px;
     margin: 10px 0;
 }
 
-.positionInformation>ul {
+.information>ul {
     margin: 0;
 }
 
-.positionInformation>ul>li {
+.information>ul>li {
     font-size: 16px;
     margin-bottom: 7px;
+}
+
+.positionSkills {
+    margin-top: 15px;
+}
+
+.positionSkills > p {
+    margin-bottom: 9px;
+    font-size: 18px;
+    text-align: center;
 }
 
 @media screen and (min-width: 500px) {
@@ -31,26 +41,34 @@
         margin: 40px 20px;
     }
 
-    .positionInformation {
+    .information {
         margin: 0 20px;
     }
 
-    .positionInformation>h2 {
+    .information>h2 {
         font-size: 24px;
     }
 
-    .positionInformation>i {
+    .information>i {
         font-size: 20px;
         margin: 14px 0;
     }
 
-    .positionInformation>ul>li {
+    .information>ul>li {
         font-size: 18px;
+    }
+
+    .positionSkills {
+        margin-top: 20px;
+    }
+
+    .positionSkills > p {
+        font-size: 24px;
     }
 }
 
 @media screen and (min-width: 700px) {
-    .positionInformation {
+    .information {
         width: 600px;
     }
 }
@@ -62,7 +80,7 @@
         margin: 40px 10px;
     }
 
-    .positionInformation {
+    .information {
         padding-left: 50px;
         width: 640px;
     }

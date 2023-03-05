@@ -57,6 +57,7 @@ export default function Home() {
               src={undrawTeam}
               width={handleBreakpoint(280, 420, 560)}
               height={handleBreakpoint(143, 214.5, 286)}
+              style={{ height: "auto" }}
               alt="team of software engineers speaking with one another"
             />
             <div className={styles.mainText}>
