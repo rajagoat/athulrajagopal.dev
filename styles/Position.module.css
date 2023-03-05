@@ -59,7 +59,7 @@
     .positionContainer {
         flex-direction: row;
         align-items: flex-start;
-        margin: 79px 10px;
+        margin: 40px 10px;
     }
 
     .logo {
@@ -67,6 +67,6 @@
     }
 
     .positionInformation {
-        width: 500px;
+        width: 640px;
     }
 }

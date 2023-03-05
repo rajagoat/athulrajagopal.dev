@@ -8,6 +8,8 @@ import ctsDark from "../public/logos/cts-logo-dark.png";
 import ctsLight from "../public/logos/cts-logo-light.png";
 import ctcDark from "../public/logos/ctc-logo-dark.png";
 import ctcLight from "../public/logos/ctc-logo-light.png";
+import suniaDark from "../public/logos/sunia-logo-dark.png";
+import suniaLight from "../public/logos/sunia-logo-light.png";
 
 const Experience = () => {
     const { activeTheme } = useTheme();
@@ -43,6 +45,18 @@ const Experience = () => {
                         "Designed and developed websites for non-profit organizations",
                         "Optimized code to efficiently handle large amounts of operational data",
                         "Improved project workflows by 33% through implementing best programming practices"
+                    ]}
+                />
+                <Position
+                    logo={activeTheme === "dark" ? suniaDark : suniaLight}
+                    marginTop={width < BREAKPOINT_NAV && 40}
+                    positionTitle={"Program Coordinator"}
+                    organization={"SUNIA"}
+                    dateRange={"November 2018 — October 2022"}
+                    accomplishments={[
+                        "Collaborated with 13 fellow volunteers to deliver UN related educational content to 100+ students each summer",
+                        "Improved event planning by using process improvement techniques to reduce setup time",
+                        "Refactored mission and vision statements by focusing on end user experience"
                     ]}
                 />
             </main>
