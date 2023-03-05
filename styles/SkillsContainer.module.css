@@ -46,7 +46,8 @@
     }
 
     .rowAligned {
-        width: 500px;
+        width: max(400px, 50vw);
+        max-width: 500px;
     }
 
     .row:not(:last-child) {
