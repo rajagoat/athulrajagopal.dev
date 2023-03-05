@@ -28,11 +28,11 @@
 
 @media screen and (min-width: 500px) {
     .positionContainer {
-        margin: 25px 20px;
+        margin: 40px 20px;
     }
-    
+
     .positionInformation {
-        width: 479px;
+        margin: 0 20px;
     }
 
     .positionInformation>h2 {
@@ -53,7 +53,7 @@
     .positionContainer {
         flex-direction: row;
         align-items: flex-start;
-        margin: 79px 0;
+        margin: 79px 10px;
     }
 
     .logo {
