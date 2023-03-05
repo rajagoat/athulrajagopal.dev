@@ -62,12 +62,14 @@ const NavMobile = () => {
                     <Link
                         href="/experience"
                         onClick={() => closeMenu()}
+                        className={router.pathname === "/experience" ? styles.activeLink : undefined}
                     >
                         Experience
                     </Link>
                     <Link
                         href="/projects"
                         onClick={() => closeMenu()}
+                        className={router.pathname === "/projects" ? styles.activeLink : undefined}
                     >
                         Projects
                     </Link>
@@ -75,18 +77,21 @@ const NavMobile = () => {
                         <Link
                             href="#"
                             onClick={() => closeMenu()}
+                            className={router.pathname === "/#" ? styles.activeLink : undefined}
                         >
                             Gleanr
                         </Link>
                         <Link
                             href="#"
                             onClick={() => closeMenu()}
+                            className={router.pathname === "/#" ? styles.activeLink : undefined}
                         >
                             Blue Nile Sport
                         </Link>
                         <Link
                             href="#"
                             onClick={() => closeMenu()}
+                            className={router.pathname === "/#" ? styles.activeLink : undefined}
                         >
                             OnTheHouse
                         </Link>
@@ -94,6 +99,7 @@ const NavMobile = () => {
                     <Link
                         href="/about"
                         onClick={() => closeMenu()}
+                        className={router.pathname === "/about" ? styles.activeLink : undefined}
                     >
                         About
                     </Link>

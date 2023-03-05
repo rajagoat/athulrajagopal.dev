@@ -30,13 +30,22 @@ const NavDesk = () => {
                     </Link>
                 </div>
                 <div className={styles.links}>
-                    <Link href="/experience">
+                    <Link 
+                        href="/experience"
+                        className={router.pathname === "/experience" ? styles.activeLink : styles.inactiveLink}
+                    >
                         Experience
                     </Link>
-                    <Link href="/projects">
+                    <Link 
+                        href="/projects"
+                        className={router.pathname === "/projects" ? styles.activeLink : styles.inactiveLink}
+                    >
                         Projects
                     </Link>
-                    <Link href="/about">
+                    <Link 
+                        href="/about"
+                        className={router.pathname === "/about" ? styles.activeLink : styles.inactiveLink}
+                    >
                         About
                     </Link>
                     <Icon
