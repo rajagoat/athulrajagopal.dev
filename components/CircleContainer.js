@@ -16,7 +16,7 @@ const CircleContainer = () => {
                 leftLg={35} 
             />
             <Circle 
-                size={208} 
+                size={198} 
                 backgroundColor={"#4088EC"} 
                 topSm={-102} 
                 topMd={-72} 
@@ -30,7 +30,7 @@ const CircleContainer = () => {
                 backgroundColor={"#7DB5F6"} 
                 topSm={344}
                 topMd={440}  
-                topLg={510} 
+                topLg={540} 
                 leftSm={257}
                 leftMd={360}
                 leftLg={429} 
@@ -42,7 +42,7 @@ const CircleContainer = () => {
                     alt="Apple Memoji of me waving"
                     priority
                     sizes="600px,
-                            (min-width :1294px) 900px"
+                            (min-width :1306px) 900px"
                 />
             </div>
         </div>
