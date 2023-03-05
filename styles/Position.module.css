@@ -1,0 +1,72 @@
+.positionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.positionInformation>h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.positionInformation>i {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.positionInformation>ul {
+    margin: 0;
+}
+
+.positionInformation>ul>li {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+@media screen and (min-width: 500px) {
+    .positionContainer {
+        margin: 40px 20px;
+    }
+
+    .positionInformation {
+        margin: 0 20px;
+    }
+
+    .positionInformation>h2 {
+        font-size: 24px;
+    }
+
+    .positionInformation>i {
+        font-size: 20px;
+        margin: 14px 0;
+    }
+
+    .positionInformation>ul>li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .positionInformation {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .positionContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 40px 10px;
+    }
+
+    .logo {
+        margin-right: 50px;
+    }
+
+    .positionInformation {
+        width: 640px;
+    }
+}
