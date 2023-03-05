@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from "../../styles/Projects.module.css";
 
 const Projects = () => {
     return (
@@ -8,7 +9,9 @@ const Projects = () => {
                 <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
                 <link rel="icon" type="image/png" href="/icons/favicon.png" />
             </Head>
-            <h1>Projects</h1>
+            <main className={styles.projects}>
+                <h1>Projects</h1>
+            </main>
         </>
     );
 }
