@@ -41,6 +41,10 @@
     margin-bottom: 27px;
 }
 
+.links > a:nth-child(2) {
+    margin-bottom: 8px;
+}
+
 .subLinks {
     font-size: 12px;
     display: flex;
@@ -54,4 +58,8 @@
 
 .subLinks > a:last-child {
     margin-bottom: 27px;
+}
+
+.activeLink {
+    font-weight: bold;
 }

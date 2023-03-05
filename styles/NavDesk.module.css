@@ -21,8 +21,35 @@
 }
 
 .links > a {
+    position: relative;
     margin-right: 46px;
 }
+
+.activeLink::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-text-primary);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+}
+
+.inactiveLink::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-text-primary);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: .3s;
+}
+
+.inactiveLink:hover::after {
+    width: 100%;
+  }
 
 .themeIcon {
     cursor: pointer;
