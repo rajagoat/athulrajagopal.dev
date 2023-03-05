@@ -21,6 +21,7 @@ const Position = (
                     width={559}
                     height={220}
                     style={{width: "100%", height: "auto"}}
+                    priority
                 />
             </div>
             <div 
