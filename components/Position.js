@@ -18,8 +18,7 @@ const Position = (
                 <Image
                     src={logo}
                     alt={`${organization} logo`}
-                    width={559}
-                    height={220}
+                    width={300}
                     style={{width: "100%", height: "auto"}}
                     priority
                 />

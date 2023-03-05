@@ -62,11 +62,8 @@
         margin: 40px 10px;
     }
 
-    .logo {
-        margin-right: 50px;
-    }
-
     .positionInformation {
+        padding-left: 50px;
         width: 640px;
     }
 }
