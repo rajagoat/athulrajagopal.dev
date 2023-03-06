@@ -1,0 +1,10 @@
+.meta {
+    align-self: flex-start;
+    padding: 10px 0 0 10px;
+}
+
+@media screen and (min-width: 500px) {
+    .meta {
+        padding: 15px 0 0 15px;
+    }
+}
