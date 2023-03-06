@@ -6,11 +6,8 @@ import OnTheHouseSample from "../../public/assets/OnTheHouse-pastorder.png";
 import ProjectHeader from "../../components/ProjectHeader";
 import ProjectSection from "../../components/ProjectSection";
 import SkillsContainer from "../../components/SkillsContainer";
-import useViewport from "../../hooks/useViewport";
 
 const OnTheHouse = () => {
-    const { handleBreakpoint } = useViewport();
-
     return (
         <>
             <Head>
