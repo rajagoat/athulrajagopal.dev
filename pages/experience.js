@@ -29,7 +29,7 @@ const Experience = () => {
                     dateRange="October 2022 — Present"
                     accomplishments={[
                         "Developing mission-critical software for Calgary’s first student-built satellite",
-                        "Programming communication modules for an STM32 microcontroller",
+                        "Programming a communication module for an STM32 microcontroller",
                         "Working with several serial communication technologies"
                     ]}
                     skills={[
