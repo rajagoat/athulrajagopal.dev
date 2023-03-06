@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
-    margin: 10px auto;
+    margin: 10px auto 45px;
 }
 
 .detailsContainer>h1 {
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 500px) {
     .detailsContainer {
-        margin: 25px 0;
+        margin: 25px 0 45px;
     }
 
     .detailsContainer>h1 {
@@ -52,6 +52,6 @@
 
 @media screen and (min-width: 1024px) {
     .detailsContainer {
-        margin: 0 auto;
+        margin: 0 auto 45px;
     }
 }
