@@ -31,11 +31,11 @@ const BlueNileSport = () => {
                 <Image
                     src={blueNileSportArticles}
                     alt="A few articles taken from the Blue Nile Sport page"
-                    sizes="(max-width: 600px) 95vw,
-                            600px"
+                    sizes="(max-width: 500px) 95vw,
+                            500px"
                     style={{
                         width: '95vw',
-                        maxWidth: '600px',
+                        maxWidth: '500px',
                         height: 'auto',
                     }}
                     placeholder="blur"
