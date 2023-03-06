@@ -75,23 +75,23 @@ const NavMobile = () => {
                     </Link>
                     <div className={styles.subLinks}>
                         <Link
-                            href="#"
+                            href="/projects/gleanr"
                             onClick={() => closeMenu()}
-                            className={router.pathname === "/#" ? styles.activeLink : undefined}
+                            className={router.pathname === "/projects/gleanr" ? styles.activeLink : undefined}
                         >
                             Gleanr
                         </Link>
                         <Link
-                            href="#"
+                            href="/projects/bluenilesport"
                             onClick={() => closeMenu()}
-                            className={router.pathname === "/#" ? styles.activeLink : undefined}
+                            className={router.pathname === "/projects/bluenilesport" ? styles.activeLink : undefined}
                         >
                             Blue Nile Sport
                         </Link>
                         <Link
-                            href="#"
+                            href="/projects/onthehouse"
                             onClick={() => closeMenu()}
-                            className={router.pathname === "/#" ? styles.activeLink : undefined}
+                            className={router.pathname === "/projects/onthehouse" ? styles.activeLink : undefined}
                         >
                             OnTheHouse
                         </Link>
