@@ -11,7 +11,7 @@ const OnTheHouse = () => {
     return (
         <>
             <Head>
-                <title>Projects | Blue Nile Sport</title>
+                <title>Projects | OnTheHouse</title>
             </Head>
             <article className={styles.detailsContainer}>
                 <ProjectHeader
