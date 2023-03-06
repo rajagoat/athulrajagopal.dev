@@ -45,10 +45,10 @@ const Gleanr = () => {
                     sectionTitle="Development"
                     paragraphs={[
                         "This hackathon provided me with an opportunity to apply my full-stack development knowledge. The site was developed using a slightly modified version of the MERN stack (i.e. using Next.js rather than plain React). Most of the styling was done using TailwindCSS, which was a first for me.",
-                        "I created a REST API (the documentation for which can be found here) using Node.js and Express. Additionally, I made use of Mongoose, which is an object modelling library that links between the Node backend and the data resting in MongoDB."
+                        "I created a REST API (the documentation for which can be found below) using Node.js and Express. Additionally, I made use of Mongoose, which is an object modelling library that links between the Node backend and the data resting in MongoDB."
                     ]}
                 />
-                <p className={styles.sectionTitle}><u>Skills</u></p>
+                <p className={styles.skillsTitle}><u>Skills</u></p>
                 <SkillsContainer
                     skills={[
                         "Next.js",
@@ -64,6 +64,13 @@ const Gleanr = () => {
                     backgroundColor={"#C0DFFC"}
                     numberPerRow={2}
                 />
+                <div className={styles.extra}>
+                    <p><b>Links</b></p>
+                    <ul>
+                        <li><u><a target="_blank" href="https://github.com/rajagoat/earth-day-c2g">Github Repo</a></u></li>
+                        <li><u><a target="_blank" href="https://docs.google.com/document/d/197S1YQKlYV77UJIOx1iEWDrEBokYtLMFNvTdEWVULZ4/edit?usp=sharing">REST API Documentation</a></u></li>
+                    </ul>
+                </div>
             </article>
         </>
     );

@@ -14,9 +14,21 @@
     margin: 10px 0;
 }
 
-.sectionTitle {
-    padding: 0 10px;
+.skillsTitle {
     margin-top: 20px;
+}
+
+.extra {
+    align-self: flex-start;
+    padding: 0 10px;
+}
+
+.extra > ul {
+    margin: 10px 0;
+}
+
+.extra > ul > li {
+    margin-bottom: 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -29,8 +41,12 @@
         margin-bottom: 20px;
     }
 
-    .sectionTitle {
+    .extra {
         padding: 0 15px;
+    }
+
+    .extra > ul > li {
+        font-size: 22px;
     }
 }
 
