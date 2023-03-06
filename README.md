@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# athulrajagopal.dev
 
-## Getting Started
+Here lies all the code for my personal site! 💻
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+### What I used to make it:
+- Next.js
+- React
+- CSS Modules
+- And a _pinch_ of Node for a mail microservice
+
+## Running the Project Locally
+
+Once you've cloned the repository, run the following commands:
 ```
+npm i
+npm run dev
+```
+And that's it! You should see the site hosted on `localhost:3000`. For more information about using Next.js, see the [documentation](https://nextjs.org/docs).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Note:** Inside `pages/api/contact.js` you will see the setup for the mail microservice which lets me receive contact form submissions to my email. This will only work if you have a `.env.local` file with the username and password of the email you want to send to. To understand how Next.js handles environment variables check out [this link](https://nextjs.org/docs/basic-features/environment-variables).
