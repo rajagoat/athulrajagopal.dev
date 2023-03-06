@@ -2,16 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px 0;
 }
 
 .projectPreviewContainer {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1440px;
+    flex-direction: column;
+    max-width: 100vw;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 500px) {
     .projects>h1 {
         margin-bottom: 20px;
+    }
+
+    .projectPreviewContainer {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1410px) {
+    .projectPreviewContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1390px;
     }
 }

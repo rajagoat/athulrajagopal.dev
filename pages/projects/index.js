@@ -31,14 +31,14 @@ const Projects = () => {
                         title="Blue Nile Sport"
                         date="January 2022"
                         tags="Freelance, CMS"
-                        description="Blue Nile Sport is a platform that provides in-depth, analytical news and commentary..."
+                        description="Blue Nile Sport is a platform that provides in-depth analytical news and commentary..."
                         redirectURL="/projects/bluenilesport"
                     />
                     <ProjectPreview
                         previewImage={onTheHousePreview}
                         previewImageAlt="OnTheHouse wireframes"
                         title="OnTheHouse"
-                        date="December 202"
+                        date="December 2020"
                         tags="Passion Project, UX/UI"
                         description="As a busy and cash-strapped university student, I am always on the hunt for wholesome..."
                         redirectURL="/projects/onthehouse"

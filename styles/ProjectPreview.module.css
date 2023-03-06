@@ -1,22 +1,21 @@
 .previewContainer {
     position: relative;
     cursor: pointer;
-    /* need to make width responsive later */
-    width: 675px;
+    width: 95vw;
     height: auto;
     color: black;
     background-color: #C0DFFC;
-    margin: 0 0 30px 30px;
+    margin: 1vw auto;
 }
 
 .imageContainer {
     position: relative;
-    height: 405px;
+    height: 300px;
 }
 
 .imageContainer>img {
     object-fit: cover;
-    object-position: 0;
+    object-position: 0 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
@@ -34,19 +33,38 @@
     -moz-transition: all 0.5s;
 }
 
-.previewContainer:hover > .imageContainer:after {
+.previewContainer:hover>.imageContainer:after {
     opacity: 0.1;
 }
 
 .information {
-    padding-left: 13px;
+    padding-top: 4px;
+    padding-left: 10px;
 }
 
 .information>h2 {
-    font-size: 54px;
+    font-size: 36px;
     margin: 0;
 }
 
 .description {
-    padding: 30px 10px 10px 0;
+    padding: 15px 10px 10px 0;
+}
+
+@media screen and (min-width: 500px) {
+    .previewContainer {
+        width: 90vw;
+        max-width: 675px;
+        margin: 10px auto;
+    }
+
+    .imageContainer {
+        height: 405px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .information {
+        padding-left: 15px;
+    }
 }

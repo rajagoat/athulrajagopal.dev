@@ -17,7 +17,8 @@ const ProjectPreview = ({ previewImage, previewImageAlt, title, date, tags, desc
                     alt={previewImageAlt}
                     fill
                     priority
-                    // need to add `sizes`
+                    sizes="675px"
+                    placeholder="blur"
                 />
             </div>
             <div className={styles.information}>
