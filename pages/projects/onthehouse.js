@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/ProjectDetails.module.css";
 import OnTheHousePreview from "../../public/assets/onthehouse-preview.png";
-import OnTheHouseSample from "../../public/assets/OnTheHouse-pastorder.png";
+import OnTheHouseSample from "../../public/assets/onthehouse-pastorder.png";
 import ProjectHeader from "../../components/ProjectHeader";
 import ProjectSection from "../../components/ProjectSection";
 import SkillsContainer from "../../components/SkillsContainer";
