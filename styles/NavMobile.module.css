@@ -3,9 +3,14 @@
     height: 43px;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0;
-    padding: 0 11px;
-    
+    padding: 4px 11px 0;   
+}
+
+.navbarLight, .navbarDark {
+    background-color: var(--color-bg-primary);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
 }
 
 .navbarLight {
@@ -37,11 +42,11 @@
     margin: 43px 35px 0 0;
 }
 
-.links > a:not(:nth-child(2)) {
+.links>a:not(:nth-child(2)) {
     margin-bottom: 27px;
 }
 
-.links > a:nth-child(2) {
+.links>a:nth-child(2) {
     margin-bottom: 8px;
 }
 
@@ -52,11 +57,11 @@
     align-items: flex-end;
 }
 
-.subLinks > a {
+.subLinks>a {
     margin-bottom: 5px;
 }
 
-.subLinks > a:last-child {
+.subLinks>a:last-child {
     margin-bottom: 27px;
 }
 
