@@ -13,12 +13,22 @@
 }
 
 @media screen and (min-width: 500px) {
+    .projects {
+        margin: 25px 0;
+    }
+
     .projects>h1 {
         margin-bottom: 20px;
     }
 
     .projectPreviewContainer {
         margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects {
+        margin: 0;
     }
 }
 
