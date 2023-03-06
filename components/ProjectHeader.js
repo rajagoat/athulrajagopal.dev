@@ -8,7 +8,7 @@ const ProjectHeader = ({ title, image, imageAlt, date, tags }) => {
             <Image
                 src={image}
                 alt={imageAlt}
-                sizes="(max-width: 1440px) 100vw,
+                sizes="(max-width: 1440px) 100%,
                         1440px"
                 style={{
                     width: '100%',
@@ -17,6 +17,7 @@ const ProjectHeader = ({ title, image, imageAlt, date, tags }) => {
                 }}
                 placeholder="blur"
                 priority
+                className={styles.imageMain}
             />
             <div className={styles.meta}>
                 <p><i>{date}</i></p>

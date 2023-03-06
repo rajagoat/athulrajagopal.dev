@@ -9,20 +9,10 @@ import SkillsContainer from '../components/SkillsContainer';
 import Links from '../components/Links';
 import ContactForm from '../components/ContactForm';
 import useViewport from "../hooks/useViewport";
-import { BREAKPOINT_MD, BREAKPOINT_LG } from '../constants';
+
 
 export default function Home() {
-  const { width } = useViewport();
-  
-  const handleBreakpoint = (sm, md, lg) => {
-    if (width < BREAKPOINT_MD) {
-      return sm;
-    } else if (width < BREAKPOINT_LG) {
-      return md;
-    } else {
-      return lg;
-    }
-  };
+  const { handleBreakpoint } = useViewport();
 
   return (
     <>

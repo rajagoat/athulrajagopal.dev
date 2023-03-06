@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import linkedinIcon from "@iconify/icons-mdi/linkedin";
 import githubIcon from "@iconify/icons-mdi/github";
 import useViewport from "../hooks/useViewport";
-import { BREAKPOINT } from "../constants";
+import { BREAKPOINT_MD as BREAKPOINT } from "../constants";
 
 const Footer = () => {
     const { width } = useViewport();
