@@ -28,8 +28,6 @@ export default function Home() {
     <>
       <Head>
         <title>Home | Athul Rajagopal</title>
-        <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-        <link rel="icon" type="image/png" href="/icons/favicon.png" />
       </Head>
       <div className={styles.mainIntroContainer}>
         <CircleContainer />

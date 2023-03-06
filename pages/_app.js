@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import Layout from '../components/Layout'
 import { MenuContextProvider } from "../context/MenuContext";
 import '../styles/globals.css'
@@ -17,6 +18,10 @@ function MyApp({ Component, pageProps }) {
       <ViewportContextProvider>
         <MenuContextProvider>
           <Layout>
+            <Head>
+              <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
+              <link rel="icon" type="image/png" href="/icons/favicon.png" />
+            </Head>
             <Component {...pageProps} />
           </Layout >
         </MenuContextProvider>
