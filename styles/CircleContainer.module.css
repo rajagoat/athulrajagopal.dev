@@ -3,6 +3,7 @@
     top: 0;
     overflow: hidden;
     width: 100%;
+    max-width: 1440px;
     min-height: 100%;
     z-index: -2;
 }

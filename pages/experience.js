@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from "../styles/Experience.module.css";
 import useTheme from "../hooks/useTheme";
-import useVieport from "../hooks/useViewport";
+import useViewport from "../hooks/useViewport";
 import { BREAKPOINT_NAV } from "../constants/index";
 import Position from '../components/Position';
 import ctsDark from "../public/logos/cts-logo-dark.png";
@@ -13,14 +13,12 @@ import suniaLight from "../public/logos/sunia-logo-light.png";
 
 const Experience = () => {
     const { activeTheme } = useTheme();
-    const { width } = useVieport();
+    const { width } = useViewport();
 
     return (
         <>
             <Head>
                 <title>Experience | Athul Rajagopal</title>
-                <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-                <link rel="icon" type="image/png" href="/icons/favicon.png" />
             </Head>
             <main className={styles.experience}>
                 <h1>Experience</h1>
