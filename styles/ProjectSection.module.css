@@ -1,0 +1,20 @@
+.sectionContainer {
+    margin-top: 7px;
+    padding: 0 10px;
+}
+
+.sectionParagraph {
+    line-height: 139%;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 500px) {
+    .sectionContainer {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .sectionParagraph {
+        margin-bottom: 30px;
+    }
+}
