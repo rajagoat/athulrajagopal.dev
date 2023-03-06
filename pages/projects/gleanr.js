@@ -67,7 +67,7 @@ const Gleanr = () => {
                 <div className={styles.extra}>
                     <p><b>Links</b></p>
                     <ul>
-                        <li><u><a target="_blank" href="https://github.com/rajagoat/earth-day-c2g">Github Repo</a></u></li>
+                        <li><u><a target="_blank" href="https://github.com/rajagoat/earth-day-c2g">GitHub Repo</a></u></li>
                         <li><u><a target="_blank" href="https://docs.google.com/document/d/197S1YQKlYV77UJIOx1iEWDrEBokYtLMFNvTdEWVULZ4/edit?usp=sharing">REST API Documentation</a></u></li>
                     </ul>
                 </div>

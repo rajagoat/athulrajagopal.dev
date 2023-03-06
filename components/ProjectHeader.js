@@ -8,11 +8,11 @@ const ProjectHeader = ({ title, image, imageAlt, date, tags }) => {
             <Image
                 src={image}
                 alt={imageAlt}
-                sizes="(max-width: 1440px) 100%,
-                        1440px"
+                sizes="(max-width: 675px) 100%,
+                        675px"
                 style={{
                     width: '100%',
-                    maxWidth: '1440px',
+                    maxWidth: '675px',
                     height: 'auto',
                 }}
                 placeholder="blur"
