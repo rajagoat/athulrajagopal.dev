@@ -19,8 +19,22 @@ function MyApp({ Component, pageProps }) {
         <MenuContextProvider>
           <Layout>
             <Head>
-              <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
               <link rel="icon" type="image/png" href="/icons/favicon.png" />
+              {/* HTML Meta Tags */}
+              <meta name="description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
+              {/* Facebook Meta Tags */}
+              <meta property="og:url" content="https://www.athulrajagopal.dev/" />
+              <meta property="og:type" content="website" />
+              <meta property="og:title" content="Home | Athul Rajagopal" />
+              <meta property="og:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
+              <meta property="og:image" content="/assets/preview.png" />
+              {/* Twitter Meta Tags */}
+              <meta name="twitter:card" content="/assets/preview.png" />
+              <meta property="twitter:domain" content="athulrajagopal.dev" />
+              <meta property="twitter:url" content="https://www.athulrajagopal.dev/" />
+              <meta name="twitter:title" content="Home | Athul Rajagopal" />
+              <meta name="twitter:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
+              <meta name="twitter:image" content="/assets/preview.png" />
             </Head>
             <Component {...pageProps} />
           </Layout >
