@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 const nodemailer = require("nodemailer");
 
-export default async (req, res) => {
+export default (req, res) => {
     const { name, email, text } = req.body;
 
     const transporter = nodemailer.createTransport({
