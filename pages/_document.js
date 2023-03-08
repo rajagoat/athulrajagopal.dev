@@ -29,14 +29,14 @@ class MyDocument extends Document {
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content="Home | Athul Rajagopal" />
                     <meta property="og:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-                    <meta property="og:image" content="https://www.athulrajagopal.dev/_next/image?url=/assets/og-preview.png&w=1200&q=75" />
+                    <meta property="og:image" content="https://www.athulrajagopal.dev/assets/og-preview.png" />
                     {/* Twitter Meta Tags */}
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta property="twitter:domain" content="athulrajagopal.dev" />
                     <meta property="twitter:url" content="https://www.athulrajagopal.dev/" />
                     <meta name="twitter:title" content="Home | Athul Rajagopal" />
                     <meta name="twitter:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-                    <meta name="twitter:image" content="https://www.athulrajagopal.dev/_next/image?url=/assets/og-preview.png&w=1200&q=75" />
+                    <meta name="twitter:image" content="https://www.athulrajagopal.dev/assets/og-preview.png" />
                 </Head>
                 <body style={{ overflowX: "hidden" }}>
                     <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
