@@ -13,8 +13,6 @@ const ViewportContextProvider = dynamic(() => import("../context/ViewportContext
 });
 
 function MyApp({ Component, pageProps }) {
-  const imageUrl = process.env.NEXT_PUBLIC_BASE_URL + '/api/og';
-
   return (
     <ThemeContextProvider>
       <ViewportContextProvider>
@@ -28,14 +26,14 @@ function MyApp({ Component, pageProps }) {
               <meta property="og:type" content="website" />
               <meta property="og:title" content="Home | Athul Rajagopal" />
               <meta property="og:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-              <meta property="og:image" content={imageUrl} />
+              <meta property="og:image" content="https://www.athulrajagopal.dev/_next/image?url=/assets/og-preview.png&w=1200&q=75" />
               {/* Twitter Meta Tags */}
-              <meta name="twitter:card" content={imageUrl} />
+              <meta name="twitter:card" content="summary_large_image" />
               <meta property="twitter:domain" content="athulrajagopal.dev" />
               <meta property="twitter:url" content="https://www.athulrajagopal.dev/" />
               <meta name="twitter:title" content="Home | Athul Rajagopal" />
               <meta name="twitter:description" content="Portfolio and personal website of Athul Rajagopal - Software Engineering and Commerce student at the University of Calgary." />
-              <meta name="twitter:image" content={imageUrl} />
+              <meta name="twitter:image" content="https://www.athulrajagopal.dev/_next/image?url=/assets/og-preview.png&w=1200&q=75" />
             </Head>
             <Component {...pageProps} />
           </Layout >
