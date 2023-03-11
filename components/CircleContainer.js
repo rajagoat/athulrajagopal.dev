@@ -13,20 +13,20 @@ const CircleContainer = () => {
 
     return (
         <div className={styles.circleContainer}>
-            <Circle 
-                size={determineSize(89)} 
+            <Circle
+                size={determineSize(89)}
                 backgroundColor={"#0559DB"}
-                top={handleBreakpoint(-10, 60, 72.8)} 
+                top={handleBreakpoint(-10, 60, 72.8)}
                 left={handleBreakpoint(-21, 30, 35)}
             />
-            <Circle 
-                size={determineSize(198)} 
+            <Circle
+                size={determineSize(198)}
                 backgroundColor={"#4088EC"}
                 top={handleBreakpoint(-102, -72, -72)}
                 left={handleBreakpoint(240, 270, 370)}
             />
-            <Circle 
-                size={determineSize(77)} 
+            <Circle
+                size={determineSize(77)}
                 backgroundColor={"#7DB5F6"}
                 top={handleBreakpoint(344, 440, 540)}
                 left={handleBreakpoint(257, 360, 429)}

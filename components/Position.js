@@ -22,6 +22,7 @@ const Position = (
                     width={300}
                     style={{ width: "100%", height: "auto" }}
                     priority
+                    placeholder="blur"
                 />
             </div>
             <div
