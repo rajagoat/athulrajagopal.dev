@@ -28,6 +28,7 @@ const About = () => {
                         width={201}
                         height={201}
                         className={styles.memoji}
+                        placeholder="blur"
                     />
                 </div>
                 <div className={styles.textContainer}>
@@ -54,6 +55,7 @@ const About = () => {
                             borderRadius: 10,
                             marginBottom: 5
                         }}
+                        placeholder="blur"
                     />
                     <figcaption className={lora.className}>play ball!</figcaption>
                 </figure>
