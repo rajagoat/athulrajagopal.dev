@@ -38,7 +38,7 @@ export default function Home() {
           <section className={styles.main}>
             <div className={styles.mainText}>
               <p>Welcome to my page!</p>
-              <p>I’m currently an undergraduate student at the <b>University of Calgary</b>, pursuing a dual major in <b>Software Engineering</b> and <b>Commerce</b>.</p>
+              <p>I’m currently an undergraduate student at the <b>University of Calgary</b>, pursuing a dual degree in <b>Software Engineering</b> and <b>Commerce</b>.</p>
               <p>With more than two years of experience developing software for non-profit organizations, student teams, and hackathons, I am well-versed in creating quality software solutions to address real-world problems.</p>
             </div>
             <Image
