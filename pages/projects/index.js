@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import ProjectPreview from '../../components/ProjectPreview';
+import UpgradeBanner from '../../components/UpgradeBanner';
 import styles from "../../styles/Projects.module.css";
 import gleanrPreview from "../../public/assets/gleanr-preview.png";
 import blueNileSportPreview from "../../public/assets/bluenilesport-preview.png";
@@ -13,6 +14,7 @@ const Projects = () => {
             </Head>
             <main className={styles.projects}>
                 <h1>Projects</h1>
+                <UpgradeBanner />
                 <div className={styles.projectPreviewContainer}>
                     <ProjectPreview
                         previewImage={gleanrPreview}
