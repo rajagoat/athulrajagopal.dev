@@ -37,9 +37,10 @@ export default function Home() {
         <div className={styles.mainBackground}>
           <section className={styles.main}>
             <div className={styles.mainText}>
-              <p>Welcome to my page!</p>
-              <p>I’m currently an undergraduate student at the <b>University of Calgary</b>, pursuing a dual degree in <b>Software Engineering</b> and <b>Commerce</b>.</p>
-              <p>With more than two years of experience developing software for non-profit organizations, student teams, and hackathons, I am well-versed in creating quality software solutions to address real-world problems.</p>
+              <p>Welcome!</p>
+              <p>I’m a software engineer who’s passionate about <b>building things people actually want to use.</b></p>
+              <p>Much of my work is centered on products that change as they’re used. This involves turning early ideas into shipped features, navigating tradeoffs, and refining existing systems while keeping them functional.</p>
+              <p>Good software, to me, comes from caring about usability, craftsmanship, and how things hold up over time.</p>
             </div>
             <Image
               src={undrawTeam}
@@ -53,18 +54,18 @@ export default function Home() {
             </div>
             <SkillsContainer
               skills={[
-                "C",
-                "C++",
-                "Java",
-                "JavaScript",
                 "TypeScript",
-                "Node.js",
-                "Express",
                 "React",
                 "Next.js",
+                "Vue.js",
+                "JavaScript",
                 "REST API",
+                "Express",
+                "Node.js",
                 "SQL",
-                "NoSQL"
+                "Java",
+                "C",
+                "C++",
               ]}
               numberPerRow={handleBreakpoint(2, 2 ,3)}
             />
