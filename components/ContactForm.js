@@ -29,7 +29,7 @@ const ContactForm = () => {
             if (response.ok) {
                 router.push("/success");
             } else {
-                window.alert("Form could not be submitted. Please send me an email at athul.rajagopal@ucalgary.ca");
+                window.alert("Form could not be submitted. Please send me an email at athulrajagopaldev@gmail.com");
             }
         }
     }
@@ -38,7 +38,7 @@ const ContactForm = () => {
         <>
             <div className={styles.mainText}>
                 <p>Want to get in touch?</p>
-                <p>Send me an email at <u><a href="mailto:athul.rajagopal@ucalgary.ca">athul.rajagopal@ucalgary.ca</a></u>, or send in a form below! I’ll get back to you as soon as I can.
+                <p>Send me an email at <u><a href="mailto:athulrajagopaldev@gmail.com">athulrajagopaldev@gmail.com</a></u>, or send in a form below! I’ll get back to you as soon as I can.
                 </p>
             </div>
             <form className={styles.contactForm} onSubmit={(e) => handleSubmit(e)}>
