@@ -4,6 +4,7 @@ import useTheme from "../hooks/useTheme";
 import useViewport from "../hooks/useViewport";
 import { BREAKPOINT_NAV } from "../constants/index";
 import Position from '../components/Position';
+import UpgradeBanner from '../components/UpgradeBanner';
 import ctsDark from "../public/logos/cts-logo-dark.png";
 import ctsLight from "../public/logos/cts-logo-light.png";
 import ctcDark from "../public/logos/ctc-logo-dark.png";
@@ -22,6 +23,7 @@ const Experience = () => {
             </Head>
             <main className={styles.experience}>
                 <h1>Experience</h1>
+                <UpgradeBanner />
                 <Position
                     logo={activeTheme === "dark" ? ctsDark : ctsLight}
                     positionTitle="Software Developer"
